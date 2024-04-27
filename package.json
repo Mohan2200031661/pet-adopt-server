@@ -4,14 +4,13 @@
   "description": "Server and backend management for pet adoption app.",
   "main": "app.js",
   "scripts": {
-    "start": "nodemon server.js",
+    "start": "node server.js",
     "deploy-postbuild": "cd client && npm install && npm run build",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "mohan raj kumar",
   "license": "",
   "dependencies": {
-    "bcrypt": "^5.1.0",
     "body-parser": "^1.20.1",
     "config": "^3.3.9",
     "cookie-parser": "^1.4.6",
