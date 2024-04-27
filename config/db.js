@@ -3,7 +3,7 @@ const dotenv = require("dotenv");
 
 dotenv.config({ path: `${__dirname}/config.env` });
 
-const db = 'mongodb://localhost:27017/petfriender';
+const db = process.env.MONGO_URI;
 
 const connectDB = async () => {
   try {
